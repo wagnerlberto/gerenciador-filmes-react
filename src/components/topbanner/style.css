@@ -1,0 +1,14 @@
+div.topbanner {
+  height: 200px;
+  background-color: lightgray;
+}
+
+center.topbanner{
+  font-size: 30px;
+  font-weight: bold;
+  color: gray;
+  position: absolute;
+  top: 110px;
+  text-align: center;
+  width: 100%;
+}
