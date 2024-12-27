@@ -1,6 +1,8 @@
 div.topbanner {
   height: 200px;
   background-color: lightgray;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 center.topbanner{
@@ -11,4 +13,14 @@ center.topbanner{
   top: 110px;
   text-align: center;
   width: 100%;
+}
+
+img.topbanner{
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  img.topbanner {
+    display: none;
+  }
 }
