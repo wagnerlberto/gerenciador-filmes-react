@@ -1,12 +1,14 @@
+import { Mainbody } from "./components/mainbody";
 import { Topbanner } from "./components/topbanner";
-import { TopBar } from "./components/topbar";
+import { Topbar } from "./components/topbar";
 import "./global.css";
 
 function App() {
   return (
     <>
-      <TopBar />
+      <Topbar />
       <Topbanner />
+      <Mainbody />
     </>
   );
 }
