@@ -1,0 +1,19 @@
+div.menu{
+  display: flex;
+}
+
+span.menu{
+  padding: 10px;
+  background-color: white;
+}
+
+span:hover.menu{
+  background-color: lightgray;
+}
+
+a.menu{
+  text-decoration: none;
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+}
