@@ -1,0 +1,11 @@
+div.home{
+  background-color: lightgray;
+  color: gray;
+  margin-top: 0px;
+  padding: 10px;
+  min-height: 400px;
+}
+
+h1.home{
+  font-size: 38px;
+}

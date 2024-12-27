@@ -1,9 +1,10 @@
-import { Menu } from "./components/menu";
+import "./global.css";
 import { Footer } from "./components/footer";
 import { Mainbody } from "./components/mainbody";
 import { Topbanner } from "./components/topbanner";
 import { Topbar } from "./components/topbar";
-import "./global.css";
+import { Home } from "./pages/home";
+import { Menu } from "./components/menu";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Topbanner />
       <Mainbody>
         <Menu />
+        <Home />
       </Mainbody>
       <Footer />
     </>
