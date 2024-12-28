@@ -1,6 +1,6 @@
 import "./style.css";
 
-export function Actor() {
+export function Actors() {
   return (
     <div className="content">
       <h1>ATORES</h1>
