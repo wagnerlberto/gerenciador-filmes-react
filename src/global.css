@@ -8,6 +8,10 @@ h1{
   font-size: 38px;
 }
 
+h2{
+  font-size: 28px;
+}
+
 .content{
   background-color: lightgray;
   color: gray;

@@ -14,7 +14,9 @@ function filmsHandler(films){
       // <div className="films-content" key={i++}>
       //   <h2>{film.nome}</h2>
       // </div>
-      <Filmcard key={i++} />
+      <div className="film-content">
+        <Filmcard key={i++} />
+      </div>
     );
   });
 
@@ -42,7 +44,9 @@ export function Films() {
   return (
     <div className="content">
       <h1>FILMES</h1>
-      {films}
+      <div className="cards">
+        {films}
+      </div>
     </div>
   );
 }
