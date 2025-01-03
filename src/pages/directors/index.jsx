@@ -33,7 +33,6 @@ export function Directors() {
       console.error(error);
     })
     .finally(() => {
-      console.log("Finally");
     });
   }, []);
 

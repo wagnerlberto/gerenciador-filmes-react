@@ -10,13 +10,19 @@ function filmsHandler(films){
 
   let i = 1;
   let content = films.map(film => {
+
+    let elenco = film.elenco.map(actor => actor.nome).join(", ");
+      
     return (
       // <div className="films-content" key={i++}>
       //   <h2>{film.nome}</h2>
       // </div>
-      <div className="film-content">
-        <Filmcard key={i++} />
-      </div>
+      <Filmcard key={i++} 
+                title={film.nome}
+                director={film.diretor.nome}
+                cast={elenco}
+                grade={film.nota}
+      />
     );
   });
 
@@ -37,7 +43,6 @@ export function Films() {
       console.error(error);
     })
     .finally(() => {
-      console.log("Finally");
     });
   }, []);
 

@@ -33,7 +33,6 @@ export function Actors() {
       console.error(error);
     })
     .finally(() => {
-      console.log("Finally");
     });
   }, []);
 
