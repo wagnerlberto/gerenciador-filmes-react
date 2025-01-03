@@ -1,7 +1,8 @@
 import "./style.css";
-import { BACKEND_URL } from "../../config/index.js";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { BACKEND_URL } from "../../config/index.js";
+import { Filmcard } from "../../components/filmcard/index.jsx";
 
 function filmsHandler(films){
   if(!Array.isArray(films)) 
@@ -10,9 +11,10 @@ function filmsHandler(films){
   let i = 1;
   let content = films.map(film => {
     return (
-      <div className="films-content" key={i++}>
-        <h2>{film.nome}</h2>
-      </div>
+      // <div className="films-content" key={i++}>
+      //   <h2>{film.nome}</h2>
+      // </div>
+      <Filmcard key={i++} />
     );
   });
 
