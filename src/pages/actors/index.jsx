@@ -1,15 +1,16 @@
 import "./style.css";
 import { BACKEND_URL } from "../../config/index.js";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function actorsHandler(actors){
   if(!Array.isArray(actors)) 
     return actors;
 
+  let i = 1;
   let content = actors.map(actor => {
     return (
-      <div className="actor">
+      <div className="actors-content" key={i++}>
         <h2>{actor.nome}</h2>
       </div>
     );
@@ -22,7 +23,8 @@ export function Actors() {
 
   const [actors, setActors] = useState("Nada a mostrar");
 
-  axios.get(`${BACKEND_URL}/atores`)
+  useEffect(() => {
+    axios.get(`${BACKEND_URL}/atores`)
     .then(response => {
       let actors = response.data;
       setActors(actorsHandler(actors));
@@ -33,6 +35,7 @@ export function Actors() {
     .finally(() => {
       console.log("Finally");
     });
+  }, []);
 
   return (
     <div className="content">
