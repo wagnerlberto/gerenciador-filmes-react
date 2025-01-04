@@ -11,6 +11,8 @@ h3.home-form{
 p.home-form{
   padding-left: 10px;
   padding-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 input.home-form{
@@ -20,3 +22,18 @@ input.home-form{
   border-color: gray;
   border-width: 1px;
 }
+
+.home-form-icon{
+  color: gray;
+}
+
+.home-form-icon:hover{
+  color: darkgray;
+}
+
+
+.home-form-icon:active{
+  border: 1px solid gray;
+  scale: 1.2;
+}
+

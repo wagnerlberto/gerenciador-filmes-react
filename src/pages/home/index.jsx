@@ -1,4 +1,5 @@
 import "./style.css";
+import { FaMinusSquare, FaPlusSquare } from "react-icons/fa";
 
 export function Home() {
   return (
@@ -17,7 +18,15 @@ export function Home() {
         </p>
         <h3 className="home-form">Elenco:</h3>
         <p className="home-form">
-          <input type="text" placeholder="Nome do ator" className="home-form" size="40" />
+          <div>
+            <input type="text" placeholder="Nome do ator" className="home-form" size="40" />
+          </div>
+          <div>
+            <FaMinusSquare size="25" className="home-form-icon" />
+          </div>
+          <div>
+            <FaPlusSquare size="25" className="home-form-icon" />
+          </div>
         </p>
         
       </div>
